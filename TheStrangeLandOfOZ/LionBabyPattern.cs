@@ -5,15 +5,6 @@ using UnityEngine;
 public class Test_LionBabyPattern : MonoBehaviour
 {
 
-    // 왼쪽과 오른쪽에서 spawn된다
-    // - 몇초마다 spawn될지 
-    // - 총 몇마리 spawn될지
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     bool isPattern = false;
     void Update()
     {
