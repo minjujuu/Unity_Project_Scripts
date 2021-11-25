@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Test_RoseSet : MonoBehaviour
 {
-    // 4°³ÀÇ ²É
-    // ÆĞÅÏÀÌ ½ÃÀÛµÇ¸é,
-    // - ¹ØÀ¸·Î ³»·Á°¡´Âµ¥ ¶¥À» Âï°í ³»·Á¿Â´Ù
-    // - n¹ø(random)ºÎÅÍ ¸ÕÀú ³»·Á°£´Ù 
-    // - nÃÊ(random) ÈÄ¿¡ ´Ù¸¥ ¾Ö°¡ ³»·Á°£´Ù
-    // - ÁÂ¿ì·Î Á¶±İ¾¿ ¿òÁ÷ÀÎ´Ù
+    // 4ê°œì˜ ê½ƒ
+    // íŒ¨í„´ì´ ì‹œì‘ë˜ë©´,
+    // - ë°‘ìœ¼ë¡œ ë‚´ë ¤ê°€ëŠ”ë° ë•…ì„ ì°ê³  ë‚´ë ¤ì˜¨ë‹¤
+    // - në²ˆ(random)ë¶€í„° ë¨¼ì € ë‚´ë ¤ê°„ë‹¤ 
+    // - nì´ˆ(random) í›„ì— ë‹¤ë¥¸ ì• ê°€ ë‚´ë ¤ê°„ë‹¤
+    // - ì¢Œìš°ë¡œ ì¡°ê¸ˆì”© ì›€ì§ì¸ë‹¤
     public GameObject[] roses;
     int idx;
     Transform roseTr;
@@ -40,7 +40,7 @@ public class Test_RoseSet : MonoBehaviour
                 float waitTime = Random.Range(0, 2f);
 
                 roseTr = roses[SetRoseIdx(idx)].transform;
-                // ¶³¾îÁö±â
+                // ë–¨ì–´ì§€ê¸°
 
                 StartCoroutine(DownAndUpRose(roseTr));
                 
@@ -49,7 +49,7 @@ public class Test_RoseSet : MonoBehaviour
                 idx++;
             }
 
-            // x°ª ¸®¼Â
+            // xê°’ ë¦¬ì…‹
             yield return new WaitForSeconds(rosePwaitTime);
         }
         
